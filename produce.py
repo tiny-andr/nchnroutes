@@ -38,7 +38,7 @@ def dump_bird(lst, f):
             dump_bird(n.child, f)
 
         elif not n.dead:
-            f.write('route %s via "%s";\n' % (n.cidr, args.next))
+            f.write('ip route comment=ospf add dst-address=%s gateway=10.10.0.200;\n' % (n.cidr, args.next))
 
 RESERVED = [
     IPv4Network('0.0.0.0/8'),
