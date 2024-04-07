@@ -1,4 +1,5 @@
 # nchnroutes
+修改了routes4.conf的生成规则。将生成routers4.rsc的添加路由条目。网关请在produce.py中修改 parser.add_argument('--static-gateway' 参数
 
 Similar to chnroutes, but instead generates routes that are not originating from Mainland
 China and generates result in BIRD static route format
